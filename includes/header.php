@@ -1,4 +1,4 @@
-<?php include_once "includes/db.php"; ?>
+<?php include_once "includes/cleardb.php"; ?>
 <?php include_once "includes/console-log.php"; ?>
 
 <!DOCTYPE html>
