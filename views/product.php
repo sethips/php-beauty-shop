@@ -12,7 +12,7 @@
     
     <?php
         require_once "./includes/base64_to_img.php";
-        require_once "./includes/db.php";
+        require_once "./includes/cleardb.php";
 
         $isValid = false;
         parse_str($_SERVER["QUERY_STRING"], $query_array);
