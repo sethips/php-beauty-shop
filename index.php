@@ -1,4 +1,4 @@
-<?php require_once "includes/db.php"; ?>
+<?php require_once "includes/cleardb.php"; ?>
 <?php include "includes/get-products.php"; ?>
 <?php include "includes/get-products-in-category.php"; ?>
 <?php include "includes/get-products-search.php"; ?>
