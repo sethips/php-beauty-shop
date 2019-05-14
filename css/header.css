@@ -1,0 +1,143 @@
+
+header {
+    --c-navbar: rgb(245, 251, 253);
+    background: var(--c-navbar);
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index: 4;
+}
+.shopping-basket-link {
+    display: flex;
+    text-decoration: none;
+    margin-left: auto;
+}
+.shopping-basket-link__text {
+    margin-left: 12px;
+}
+nav {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding-top: 0 !important;
+}
+.nav__link {
+    transition: all 0.3s ease-in-out;
+}
+.nav__link:hover {
+    opacity: 0.7;
+}
+.nav__logo {
+    margin-right: 16px;
+}
+nav > ul {
+    
+}
+nav li {
+    display: inline-block;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    padding: 18px 8px 18px 8px;
+    margin: 0 8px 0 8px;
+}
+nav > ul > li > a:hover {
+    
+}
+/* .dropdown {
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, opacity 0.2s;
+    top: 35px;
+    transform: translateY(15px);
+    padding: 8px 12px 0 12px;
+    position: absolute;
+    left: 8px;
+    z-index: 1;
+    background: var(--c-navbar);
+}
+.dropdown ul {
+    padding: 0;
+}
+.dropdown li {
+    cursor: pointer;
+    display: block;
+    padding: 8px 0px 8px 0px;
+} */
+.dropdown {
+    border-top: 1px solid rgba(73, 74, 75, 0.144);
+    opacity: 0;
+    width: 100%;
+    pointer-events: none;
+    transition: transform 0.3s ease-in-out, opacity 0.2s;
+    top: 55px;
+    transform: translateY(15px);
+    padding: 8px 12px 12px 12px;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    background: var(--c-navbar);
+}
+.nav__hamburger {
+    display: none;
+}
+
+nav > ul > li:hover > .dropdown {
+    transform: translateY(0);
+    pointer-events: all;
+    opacity: 1;
+}
+
+.dropdown ul {
+    padding: 0;
+}
+.dropdown li {
+    cursor: pointer;
+    display: block;
+    
+}
+.dropdown__category-header {
+    margin: 0 0 8px 0;
+}
+
+
+.searchbar {
+    display: flex;
+}
+.nav__searchbar {
+    margin-top: 16px;
+}
+.searchbar__input--wide {
+    width: 400px;
+    margin-right: 8px;
+}
+.searchbar__button--wide {
+    width: 15%;
+}
+
+@media screen and (max-width: 650px){
+    nav {
+       justify-content: flex-end;
+    }
+    .nav__logo {
+        margin-right: auto;
+    }
+    .nav__link {
+        display: none;
+    }
+    .nav__hamburger {
+        width: 35px;
+        height: 35px;
+        display: inline-block;
+        margin-left: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .shopping-basket-link {
+        margin: 0;
+        padding: 0;
+        width: 35px;
+
+    }
+}

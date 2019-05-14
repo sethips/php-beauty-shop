@@ -1,0 +1,12 @@
+.footer {
+    background: #dcdcdc;
+    
+}
+
+.footer__row {
+    display: flex;
+}
+
+.footer__column {
+    width: 100%;
+}

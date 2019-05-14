@@ -1,0 +1,4 @@
+<?php
+    $mydbpassword = "Blakokalachala!";
+
+?>
